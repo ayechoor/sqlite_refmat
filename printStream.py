@@ -4,8 +4,8 @@ from secret import *
 # Unique code from Twitter
 
 # Boilerplate code here
-auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
-auth.set_access_token(access_token,access_token_secret)
+auth = tweepy.OAuthHandler(secret.consumer_key,secret.consumer_secret)
+auth.set_access_token(secret.access_token,secret.access_token_secret)
 
 api = tweepy.API(auth)
 def process_or_store(tweet):
